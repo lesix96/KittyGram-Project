@@ -1,0 +1,87 @@
+.main {
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  transform: translateY(10%);
+
+  .indication_board {
+    margin-top: -13%;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+.swiper {
+  align-content:flex-start;
+  display: flex;
+  overflow-x: visible;
+  transition-property: transform;
+  will-change: transform;
+  transition-duration: 1s;
+}
+
+img {
+  object-fit: contain;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.move {
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+  transition:  background-color 0.5s;
+}
+
+.move:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.prev {
+  left: 5px;
+}
+.next {
+  right: 5px;
+}
+
+.indicator {
+  border: medium none;
+  background-image: none; 
+  background: transparent;
+  background-color: transparent;
+  color: transparent;
+  text-shadow: 0 0 0 gray;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 1s;
+}
+
+.indicator:hover {
+  color: transparent;
+  opacity: 0.6;
+}
+
+.active {
+  color: transparent;
+  text-shadow: 0 0 0  rgba(80, 65, 216, 0.8);
+}
+
+.indicator:focus {
+  outline: none;
+}
+
+.indicator_item {
+  display:inline-block;
+}
+
